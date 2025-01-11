@@ -1,0 +1,107 @@
+[
+  {
+    "Name": "TenantB",
+    "Port": "4000",
+    "Comment": "TenantB config",
+    "StartByte": 2,
+    "EndByte": 3,
+    "BytesReceived": 0,
+    "BytesSent": 0,
+    "Errors": 0,
+    "SimpleAuthToken": "",
+    "OAuthCredentials": {
+      "ClientID": "tenantB-client-id",
+      "ClientSecret": "tenantB-secret",
+      "TokenURL": "https://auth.example.com/oauth2/token",
+      "Scopes": [
+        "some-scope"
+      ],
+      "AccessToken": "",
+      "TokenType": "",
+      "TokenExpiry": "0001-01-01T00:00:00Z"
+    },
+    "KeepAliveIntervalSec": 60,
+    "KeepAliveFile": "tenantB-keepalive.xml",
+    "MessageFormat": "",
+    "Endpoint": ""
+  },
+  {
+    "Name": "TenantC",
+    "Port": "5000",
+    "Comment": "TenantB config",
+    "StartByte": 2,
+    "EndByte": 3,
+    "BytesReceived": 0,
+    "BytesSent": 0,
+    "Errors": 0,
+    "SimpleAuthToken": "foo",
+    "OAuthCredentials": {
+      "ClientID": "tenantB-client-id",
+      "ClientSecret": "tenantB-secret",
+      "TokenURL": "https://auth.example.com/oauth2/token",
+      "Scopes": [
+        "some-scope"
+      ],
+      "AccessToken": "",
+      "TokenType": "",
+      "TokenExpiry": "0001-01-01T00:00:00Z"
+    },
+    "KeepAliveIntervalSec": 60,
+    "KeepAliveFile": "tenantC-keepalive.xml",
+    "MessageFormat": "",
+    "Endpoint": ""
+  },
+  {
+    "Name": "TenantD",
+    "Port": "6000",
+    "Comment": "TenantD config",
+    "StartByte": 2,
+    "EndByte": 3,
+    "BytesReceived": 160,
+    "BytesSent": 6975,
+    "Errors": 6,
+    "SimpleAuthToken": "foosdfsfds",
+    "OAuthCredentials": {
+      "ClientID": "tenantD-client-id",
+      "ClientSecret": "tenantB-secret",
+      "TokenURL": "https://auth.example.com/oauth2/token",
+      "Scopes": [
+        "some-scope"
+      ],
+      "AccessToken": "",
+      "TokenType": "",
+      "TokenExpiry": "0001-01-01T00:00:00Z"
+    },
+    "KeepAliveIntervalSec": 60,
+    "KeepAliveFile": "tenantD-keepalive.xml",
+    "MessageFormat": "",
+    "Endpoint": "https://httpbin.org/post"
+  },
+  {
+    "Name": "TenantA",
+    "Port": "3000",
+    "Comment": "Some comment about TenantA",
+    "StartByte": 2,
+    "EndByte": 3,
+    "BytesReceived": 130,
+    "BytesSent": 450,
+    "Errors": 2,
+    "SimpleAuthToken": "foobar",
+    "OAuthCredentials": {
+      "ClientID": "tenantA-client-id",
+      "ClientSecret": "tenantA-secret",
+      "TokenURL": "https://auth.example.com/oauth2/token",
+      "Scopes": [
+        "read",
+        "write"
+      ],
+      "AccessToken": "",
+      "TokenType": "",
+      "TokenExpiry": "0001-01-01T00:00:00Z"
+    },
+    "KeepAliveIntervalSec": 30,
+    "KeepAliveFile": "tenantA-keepalive.xml",
+    "MessageFormat": "",
+    "Endpoint": ""
+  }
+]
